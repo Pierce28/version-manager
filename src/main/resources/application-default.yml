@@ -1,0 +1,36 @@
+---
+version-manager:
+  applications:
+  - name: demo-app-1
+    environments: 
+    - name: integration
+      versionEndpoint: http://localhost:8081/#1
+      gitEndpoint: http://localhost:8081/#1
+    - name: staging
+      versionEndpoint: http://localhost:8082/#1
+      gitEndpoint: http://localhost:8082/#1
+    - name: production
+      versionEndpoint: http://localhost:8082/#1
+      gitEndpoint: http://localhost:8082/#1
+  - name: demo-app-2
+    environments:
+    - name: integration
+      versionEndpoint: http://localhost:8081/#2
+      gitEndpoint: http://localhost:8081/#2
+    - name: staging
+      versionEndpoint: http://localhost:8081/#2
+      gitEndpoint: http://localhost:8081/#2
+    - name: production
+      versionEndpoint: http://localhost:8081/#2
+      gitEndpoint: http://localhost:8081/#2
+  - name: demo-app-3
+    environments:
+    - name: integration
+      versionEndpoint: http://localhost:8081/#3
+      gitEndpoint: http://localhost:8081/#3
+    - name: staging
+      versionEndpoint: http://localhost:8081/#3
+      gitEndpoint: http://localhost:8081/#3
+    - name: production
+      versionEndpoint: http://localhost:8081/#3
+      gitEndpoint: http://localhost:8081/#3
