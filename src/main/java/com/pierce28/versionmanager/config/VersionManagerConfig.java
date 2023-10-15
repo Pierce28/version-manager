@@ -10,17 +10,17 @@ import org.springframework.context.annotation.Configuration;
 public class VersionManagerConfig {
 
     @Bean
-    public AppService appService(ApplicationProperties applicationProperties) {
+    public AppService appService(VersionManagerProperties applicationProperties) {
         return new AppService(applicationProperties);
     }
     
     @Bean
-    public VersionService versionService(ApplicationProperties applicationProperties) {
-        return new VersionService(applicationProperties);
+    public VersionService versionService() {
+        return new VersionService();
     }
     
     @Bean
-    public GitService gitService(ApplicationProperties applicationProperties) {
-        return new GitService(applicationProperties);
+    public GitService gitService() {
+        return new GitService();
     }
 }
