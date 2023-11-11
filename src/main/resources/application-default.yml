@@ -4,37 +4,61 @@ version-manager:
     - name: org-1
       applications:
       - name: demo-app-1
+        owner: Team 1
+        repo: link-to-repo
         environments:
         - name: integration
           versionEndpoint: http://localhost:8081/#1
           gitEndpoint: http://localhost:8081/#1
+          logs: link-to-logs
+          jenkins: link-to-jenkins
         - name: staging
           versionEndpoint: http://localhost:8082/#1
           gitEndpoint: http://localhost:8082/#1
+          logs: link-to-logs
+          jenkins: link-to-jenkins
         - name: production
           versionEndpoint: http://localhost:8082/#1
           gitEndpoint: http://localhost:8082/#1
+          logs: link-to-logs
+          jenkins: link-to-jenkins
       - name: demo-app-2
+        owner: Team 1
+        repo: link-to-repo
         environments:
         - name: integration
           versionEndpoint: http://localhost:8081/#2
           gitEndpoint: http://localhost:8081/#2
+          logs: link-to-logs
+          jenkins: link-to-jenkins
         - name: staging
           versionEndpoint: http://localhost:8081/#2
           gitEndpoint: http://localhost:8081/#2
+          logs: link-to-logs
+          jenkins: link-to-jenkins
         - name: production
           versionEndpoint: http://localhost:8081/#2
           gitEndpoint: http://localhost:8081/#2
+          logs: link-to-logs
+          jenkins: link-to-jenkins
     - name: org-2
       applications:
       - name: demo-app-3
+        owner: Team 2
+        repo: link-to-repo
         environments:
         - name: integration
           versionEndpoint: http://localhost:8081/#3
           gitEndpoint: http://localhost:8081/#3
+          logs: link-to-logs
+          jenkins: link-to-jenkins
         - name: staging
           versionEndpoint: http://localhost:8081/#3
           gitEndpoint: http://localhost:8081/#3
+          logs: link-to-logs
+          jenkins: link-to-jenkins
         - name: production
           versionEndpoint: http://localhost:8081/#3
           gitEndpoint: http://localhost:8081/#3
+          logs: link-to-logs
+          jenkins: link-to-jenkins

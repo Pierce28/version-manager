@@ -8,5 +8,7 @@ import java.util.List;
 public class Application {
 
     private String name;
+    private String owner;
+    private String repo;
     private List<Environment> environments;
 }

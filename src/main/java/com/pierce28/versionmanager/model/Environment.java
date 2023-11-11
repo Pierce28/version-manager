@@ -6,6 +6,8 @@ import lombok.Data;
 public class Environment {
 
     private String name;
+    private String logs;
+    private String jenkins;
     private String versionEndpoint;
     private String gitEndpoint;
 }
