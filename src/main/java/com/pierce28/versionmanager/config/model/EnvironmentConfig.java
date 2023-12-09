@@ -1,9 +1,9 @@
-package com.pierce28.versionmanager.model;
+package com.pierce28.versionmanager.config.model;
 
 import lombok.Data;
 
 @Data
-public class Environment {
+public class EnvironmentConfig {
 
     private String name;
     private String logs;

@@ -3,62 +3,62 @@ version-manager:
   organizations:
     - name: org-1
       applications:
-      - name: demo-app-1
-        owner: Team 1
-        repo: link-to-repo
-        environments:
-        - name: integration
-          versionEndpoint: http://localhost:8081/#1
-          gitEndpoint: http://localhost:8081/#1
-          logs: link-to-logs
-          jenkins: link-to-jenkins
-        - name: staging
-          versionEndpoint: http://localhost:8082/#1
-          gitEndpoint: http://localhost:8082/#1
-          logs: link-to-logs
-          jenkins: link-to-jenkins
-        - name: production
-          versionEndpoint: http://localhost:8082/#1
-          gitEndpoint: http://localhost:8082/#1
-          logs: link-to-logs
-          jenkins: link-to-jenkins
-      - name: demo-app-2
-        owner: Team 1
-        repo: link-to-repo
-        environments:
-        - name: integration
-          versionEndpoint: http://localhost:8081/#2
-          gitEndpoint: http://localhost:8081/#2
-          logs: link-to-logs
-          jenkins: link-to-jenkins
-        - name: staging
-          versionEndpoint: http://localhost:8081/#2
-          gitEndpoint: http://localhost:8081/#2
-          logs: link-to-logs
-          jenkins: link-to-jenkins
-        - name: production
-          versionEndpoint: http://localhost:8081/#2
-          gitEndpoint: http://localhost:8081/#2
-          logs: link-to-logs
-          jenkins: link-to-jenkins
+        - name: demo-app-1
+          owner: Team 1
+          repo: http://localhost:3000/repo?app=app1
+          environments:
+            - name: integration
+              versionEndpoint: http://localhost:8080/api/version?app1=int
+              gitEndpoint: http://localhost:8080/api/commitHash?app1=int
+              logs: http://localhost:3000/logs?app1=int
+              jenkins: http://localhost:3000/jenkins?app1=int
+            - name: staging
+              versionEndpoint: http://localhost:8080/api/version?app1=stage
+              gitEndpoint: http://localhost:8080/api/commitHash?app1=stage
+              logs: http://localhost:3000/logs?app1=stage
+              jenkins: http://localhost:3000/jenkins?app1=stage
+            - name: production
+              versionEndpoint: http://localhost:8080/api/version?app1=prod
+              gitEndpoint: http://localhost:8080/api/commitHash?app1=prod
+              logs: http://localhost:3000/logs?app1=prod
+              jenkins: http://localhost:3000/jenkins?app1=prod
+        - name: demo-app-2
+          owner: Team 1
+          repo: http://localhost:3000/repo?app=app2
+          environments:
+            - name: integration
+              versionEndpoint: http://localhost:8080/api/version?app2=int
+              gitEndpoint: http://localhost:8080/api/commitHash?app2=int
+              logs: http://localhost:3000/logs?app2=int
+              jenkins: http://localhost:3000/jenkins?app2=int
+            - name: staging
+              versionEndpoint: http://localhost:8080/api/version?app2=stage
+              gitEndpoint: http://localhost:8080/api/commitHash?app2=stage
+              logs: http://localhost:3000/logs?app2=stage
+              jenkins: http://localhost:3000/jenkins?app2=stage
+            - name: production
+              versionEndpoint: http://localhost:8080/api/version?app2=prod
+              gitEndpoint: ""
+              logs: http://localhost:3000/logs?app2=prod
+              jenkins: http://localhost:3000/jenkins?app2=prod
     - name: org-2
       applications:
-      - name: demo-app-3
-        owner: Team 2
-        repo: link-to-repo
-        environments:
-        - name: integration
-          versionEndpoint: http://localhost:8081/#3
-          gitEndpoint: http://localhost:8081/#3
-          logs: link-to-logs
-          jenkins: link-to-jenkins
-        - name: staging
-          versionEndpoint: http://localhost:8081/#3
-          gitEndpoint: http://localhost:8081/#3
-          logs: link-to-logs
-          jenkins: link-to-jenkins
-        - name: production
-          versionEndpoint: http://localhost:8081/#3
-          gitEndpoint: http://localhost:8081/#3
-          logs: link-to-logs
-          jenkins: link-to-jenkins
+        - name: demo-app-3
+          owner: Team 2
+          repo: http://localhost:3000/repo?app=app3
+          environments:
+            - name: integration
+              versionEndpoint: http://localhost:8080/api/version?app3=int
+              gitEndpoint: http://localhost:8080/api/commitHash?app3=int
+              logs: http://localhost:3000/logs?app3=int
+              jenkins: http://localhost:3000/jenkins?app3=int
+            - name: staging
+              versionEndpoint: http://localhost:8080/api/version?app3=stage
+              gitEndpoint: http://localhost:8080/api/commitHash?app3=stage
+              logs: http://localhost:3000/logs?app3=stage
+              jenkins: http://localhost:3000/jenkins?app3=stage
+            - name: production
+              versionEndpoint: http://localhost:8080/api/version?app3=prod
+              gitEndpoint: http://localhost:8080/api/commitHash?app3=prod
+              logs: http://localhost:3000/logs?app3=prod
+              jenkins: http://localhost:3000/jenkins?app3=prod

@@ -1,4 +1,4 @@
-package com.pierce28.versionmanager.model;
+package com.pierce28.versionmanager.dto;
 
 import lombok.Data;
 

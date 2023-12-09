@@ -16,7 +16,7 @@ import java.util.List;
 @RequiredArgsConstructor
 @RequestMapping("/api")
 public class VersionController {
-    
+
     private final AppService appService;
     private final OrganizationService organizationService;
 
@@ -28,5 +28,15 @@ public class VersionController {
     @GetMapping("/org/{org}")
     public ApplicationsResponse getApplicationsForOrg(@PathVariable String org) {
         return appService.getApplicationsForOrganization(org);
+    }
+
+    @GetMapping("/version")
+    public String getTestVersion() {
+        return "42";
+    }
+
+    @GetMapping("/commitHash")
+    public String getTestCommitHash() {
+        return "hashbrowns";
     }
 }

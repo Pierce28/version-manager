@@ -8,5 +8,5 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class OrganizationsResponse {
     @NonNull
-    private String name;    
+    private String name;
 }

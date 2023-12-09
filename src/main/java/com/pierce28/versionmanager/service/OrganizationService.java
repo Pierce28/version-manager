@@ -10,10 +10,10 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class OrganizationService {
     private final VersionManagerProperties versionManagerProperties;
-    
+
     public List<OrganizationsResponse> getOrganizations() {
         return versionManagerProperties.getOrganizations().stream()
-            .map(organization -> new OrganizationsResponse(organization.getName()))
-            .collect(Collectors.toList());
+                .map(organization -> new OrganizationsResponse(organization.getName()))
+                .collect(Collectors.toList());
     }
 }
